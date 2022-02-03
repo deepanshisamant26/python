@@ -1,0 +1,7 @@
+x = input("Enter name : ")
+d={}
+for i in x:
+  d[i]=d.get(i,0)+1
+print(d)
+keymax=max(zip(d.values(),d.keys()))[1]
+print(keymax)
